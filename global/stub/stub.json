@@ -1,0 +1,135 @@
+{ "formElements": [
+    {
+        "Name"              : "Gender",
+        "Element"           : "input",
+        "Type"              : "radio",
+        "Options"           : ["Male", "Female", "Unkown"],
+        "Placeholder"       : "",
+        "Value"             : "",
+        "HideField"         : {
+            "HideElement"   : "",
+            "HideCondition" : ""
+        },
+        "Validation"        : {}
+    },
+    {
+        "Name"              : "Gender",
+        "Element"           : "input",
+        "Type"              : "checkbox",
+        "Options"           : ["Ain't", "This", "Cool"],
+        "Placeholder"       : "",
+        "Value"             : "",
+        "HideField"         : {
+            "HideElement"   : "",
+            "HideCondition" : ""
+        },
+        "Validation"        : {}
+    },
+    {
+        "Name"              : "Country",
+        "Element"           : "input",
+        "Type"              : "checkbox",
+        "Options"           : ["Netherlands", "Germany", "Belgium"],
+        "Placeholder"       : "",
+        "Value"             : "",
+        "HideField"         : {
+            "HideElement"   : "",
+            "HideCondition" : ""
+        },
+        "Validation"        : {}
+    },
+    {
+        "Name"              : "Question",
+        "Element"           : "textarea",
+        "Type"              : "checkbox",
+        "Options"           : [],
+        "Placeholder"       : "Do yuou have a question?",
+        "Value"             : "",
+        "HideField"         : {
+            "HideElement"   : "",
+            "HideCondition" : ""
+        },
+        "Validation"        : {
+            "required"  : "This field is required",
+            "minLength" : 1,
+            "maxLength" : 100
+        }
+    },
+    {
+        "Name"              : "password",
+        "Element"           : "input",
+        "Type"              : "password",
+        "Options"           : [],
+        "Placeholder"       : "",
+        "Value"             : "",
+        "HideField"         : {
+            "HideElement"   : "",
+            "HideCondition" : ""
+        },
+        "Validation"        : {
+            "required"  : "This field is required",
+            "minLength" : 1,
+            "maxLength" : 10
+        }
+    },
+    {
+        "Name"              : "Pizza",
+        "Element"           : "input",
+        "Type"              : "text",
+        "Options"           : [],
+        "Placeholder"       : "Favourite pizza topping",
+        "Value"             : "",
+        "HideField"         : {
+            "HideElement"   : "",
+            "HideCondition" : ""
+        },
+        "Validation"        : {
+            "required"  : "This field is required",
+            "minLength" : 1,
+            "maxLength" : 100,
+            "pattern"   : "^[A-Z0-9].$"
+        }
+    },
+    {
+        "Name"              : "Icecream",
+        "Element"           : "input",
+        "Type"              : "text",
+        "Options"           : [],
+        "Placeholder"       : "Favourite icecream flavour",
+        "Value"             : "Chocolate",
+        "HideField"         : {
+            "HideElement"   : "",
+            "HideCondition" : ""
+        },
+        "Validation"        : {
+            "required"  : "This field is required",
+            "minLength" : 1,
+            "maxLength" : 100,
+            "pattern"   : "^[A-Z0-9].$"
+        }
+    },
+    {
+        "Name"              : "Button",
+        "Element"           : "input",
+        "Type"              : "submit",
+        "Options"           : [],
+        "Placeholder"       : "",
+        "Value"             : "Submit",
+        "HideField"         : {
+            "HideElement"   : "",
+            "HideCondition" : ""
+        },
+        "Validation"        :  {
+            "required"  : false
+        }
+    }
+]}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+{ "formElements": [
+    {
+        "Name"              : "Icecream",
+        "Element"           : "input",
+        "Type"              : "text",
+        "Options"           : [],
+        "Placeholder"       : "Favourite icecream flavour",
+        "Value"             : "Chocolate",
+        "HideField"         : {
+            "HideElement"   : "Pizza",
+            "HideCondition" : "choc"
+        },
+        "Validation"        : {
+            "required"  : "This field is required",
+            "minLength" : 1,
+            "maxLength" : 100
+        }
+    },
+    {
+        "Name"              : "Pizza",
+        "Element"           : "input",
+        "Type"              : "text",
+        "Options"           : [],
+        "Placeholder"       : "Favourite pizza topping",
+        "Value"             : "",
+        "HideField"         : {
+            "HideElement"   : "",
+            "HideCondition" : ""
+        },
+        "Validation"        : {
+            "required"  : "This field is required",
+            "minLength" : 1,
+            "maxLength" : 100,
+            "pattern"   : "^[A-Z0-9].$"
+        }
+    },
+    {
+        "Name"              : "Button",
+        "Element"           : "input",
+        "Type"              : "submit",
+        "Options"           : [],
+        "Placeholder"       : "",
+        "Value"             : "Submit",
+        "HideField"         : {
+            "HideElement"   : "",
+            "HideCondition" : ""
+        },
+        "Validation"        :  {
+            "required"  : false
+        }
+    }
+]}
