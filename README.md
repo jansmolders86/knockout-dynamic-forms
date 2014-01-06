@@ -6,7 +6,7 @@ Knockout Dynamic Forms with Validation.
 
 Validation uses: https://github.com/Knockout-Contrib/Knockout-Validation
 
-With this code you can generate a form Dynamically based on a JSON file including validation.
+With this code you can generate a form dynamically based on a JSON file.
 
 JSON file markup (if a field is not required, just leave as an empty string or array):
 
@@ -31,8 +31,13 @@ JSON file markup (if a field is not required, just leave as an empty string or a
                 }
             }
         } 
+ 
+Knockout will handle the rest. Check out the code:
+
+* Index.html                    The view 
+* knockout-functions.js         Sets up the model and the validation 
         
-The HTML generated uses YAML classes (http://www.yaml.de/) but of course you can alter them.
+The HTML generated uses YAML classes (http://www.yaml.de/) but of course you can alter them and use your own.
 Two stubs are included for testing purposes.
 
 Feel free to improve or use. 
