@@ -2,7 +2,7 @@ knockout-dynamic-forms
 ======================
 License: MIT
 
-Knockout Dynamic Forms with Validation.
+__Knockout Dynamic Forms with Validation.__
 
 Validation uses: https://github.com/Knockout-Contrib/Knockout-Validation.
 
