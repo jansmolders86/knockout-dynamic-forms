@@ -30,7 +30,7 @@ JSON file markup (if a field is not required, just leave as an empty string or a
             }
         } 
         
-The HTML generated uses YAML (http://www.yaml.de/) but ofcourse you can alter them.
+The HTML generated uses YAML classes (http://www.yaml.de/) but of course you can alter them.
 Two stubs are included for testing purposes.
 
 Feel free to improve or use. 
