@@ -4,7 +4,14 @@ License: MIT
 
 Knockout Dynamic Forms with Validation.
 
-Validation uses: https://github.com/Knockout-Contrib/Knockout-Validation
+Validation uses: https://github.com/Knockout-Contrib/Knockout-Validation.
+
+__Features:__
+
+* Made with plain JavaScript and KnockoutJS
+* Dirty checking of fields
+* Form and field validation 
+* JSON markup of field data
 
 With this code you can generate a form dynamically based on a JSON file.
 
