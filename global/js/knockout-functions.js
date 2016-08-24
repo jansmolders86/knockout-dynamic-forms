@@ -1,6 +1,7 @@
 
 //Validation configurables
 //More info: https://github.com/Knockout-Contrib/Knockout-Validation
+//Perfection of https://github.com/jansmolders86/knockout-dynamic-forms
 
 ko.validation.configure({
     registerExtenders: true,

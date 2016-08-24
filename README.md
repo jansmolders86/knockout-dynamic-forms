@@ -2,14 +2,14 @@ knockout-dynamic-forms
 ======================
 License: MIT
 
-__Perfection__
+## Perfection
 Perfection of https://github.com/jansmolders86/knockout-dynamic-forms
 
-__Knockout Dynamic Forms with Validation.__
+## Knockout Dynamic Forms with Validation
 
 Validation uses: https://github.com/Knockout-Contrib/Knockout-Validation.
 
-__Features:__
+## Features
 
 * Made with plain JavaScript and KnockoutJS
 * Dirty checking of fields
@@ -52,3 +52,6 @@ Two stubs are included for testing purposes.
 
 Feel free to improve or use. 
 (ps, run on a webserver, locally does not work of course)
+
+## Thanks to
+[Jan Smolders](https://github.com/jansmolders86)
