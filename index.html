@@ -3,9 +3,12 @@
 <!--[if IE 7 ]>    <html class="ie7 lte8"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8 lte8"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html>
+<!--<![endif]-->
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Knockout Dynamic Forms</title>
     <script src="global/js/knockout-3.0.0.js"></script>
     <script src="global/js/knockout.validation.js"></script>
@@ -13,46 +16,49 @@
         var JSONUrl = 'global/stub/stub.json';
     </script>
     <script src="global/js/knockout-functions.js"></script>
-    <link href="global/css/form.css" rel="stylesheet" type="text/css"/>
+    <link href="global/css/form.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <div style="display: none;" data-bind="visible: true" >
+    <div style="display: none;" data-bind="visible: true">
         <form id="" action="" data-bind="foreach: Fields" class="ym-form">
             <!--ko if: $parent.HiddenElements().indexOf(Name()) == -1 -->
             <div class="ym-fbox" data-bind="css:'ym-fbox-'+Type()">
                 <!--ko if: Element() !== "button" && Type() !== "submit" -->
-                    <label data-bind="text: Name, attr: {for:Name}"></label>
+                <label data-bind="text: Name, attr: {for:Name}"></label>
                 <!--/ko-->
 
                 <!--ko if: Element() === "select" -->
-                    <select data-bind="options: Options, attr: {id:Name}, value:Value"></select>
+                <select data-bind="options: Options, attr: {id:Name}, value:Value"></select>
                 <!--/ko-->
 
                 <!--ko if: Element() === "input" && Type() === "radio" || Type() === "checkbox" -->
-                    <div class="ym-label" data-bind="foreach: Options">
-                        <input data-bind="checked: $parent.DefaultValue, attr: {id:$data, type:$parent.Type, name:$data}, value:$data"/>
-                        <label data-bind="text: $data, attr: {for:$data}"></label>
-                    </div>
+                <!-- ko foreach: Options -->
+                    <input type="checkbox" data-bind="checkedValue: $data, checked: $parent.Value" />
+                    <span data-bind="text: $data"></span>
+                <!-- /ko -->
+                
                 <!--/ko-->
 
                 <!--ko if: Element() === "input" && Type() !== "radio" && Type() !== "checkbox" && Type() !== "submit" -->
-                    <input data-bind="attr: {id:Name, type:Type, placeholder:Placeholder }, value:Value "></input>
+                <input data-bind="attr: {id:Name, type:Type, placeholder:Placeholder }, value:Value "></input>
                 <!--/ko-->
 
                 <!--ko if: Element() === "textarea" -->
-                    <textarea data-bind="attr: {id:Name, placeholder:Placeholder, value:Value}, value:Value"></textarea>
+                <textarea data-bind="attr: {id:Name, placeholder:Placeholder, value:Value}, value:Value"></textarea>
                 <!--/ko-->
 
                 <!--ko if: Element() === "input" && Type() === "submit" -->
-                    <input data-bind=" attr: {id:Name, type:Type, value: Value}, click: $root.SaveForm"></input>
+                <input data-bind=" attr: {id:Name, type:Type, value: Value}, click: $root.SaveForm"></input>
                 <!--/ko-->
 
                 <!--ko if: Element() === "button" -->
-                    <button data-bind="attr: {id:Name}"><span data-bind="text: Value, click: $root.SaveForm"></span></button>
+                <button data-bind="attr: {id:Name}"><span data-bind="text: Value, click: $root.SaveForm"></span></button>
                 <!--/ko-->
             </div>
             <!--/ko-->
         </form>
     </div>
 </body>
+
 </html>
