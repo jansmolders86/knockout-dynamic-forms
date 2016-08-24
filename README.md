@@ -2,6 +2,9 @@ knockout-dynamic-forms
 ======================
 License: MIT
 
+__Perfection__
+Perfection of https://github.com/jansmolders86/knockout-dynamic-forms
+
 __Knockout Dynamic Forms with Validation.__
 
 Validation uses: https://github.com/Knockout-Contrib/Knockout-Validation.
@@ -24,7 +27,7 @@ JSON file markup (if a field is not required, just leave as an empty string or a
                 "Type"              : "radio",                          // String: Type (Can be: text, radio, checkbox, hidden, password, submit)
                 "Options"           : ["Male", "Female", "Unkown"],     // Array: Options (Used by select, radio, checkbox)
                 "Placeholder"       : "",                               // String: A placeholder text
-                "Value"             : "",                               // String/Integer: Default value 
+                "Value"             : "",                               // String/Integer: Default value or [] for array. ex : "Value" : []
                 "HideField"         : {                                 // Set if a field needs to be hidden if the value of the current element
                                                                         // meets a certain condition
                     "HideElement"   : "",                               // String: The element (by name)  that needs to be hidden
