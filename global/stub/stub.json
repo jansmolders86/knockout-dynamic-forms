@@ -1,5 +1,18 @@
 { "formElements": [
     {
+        "Name"              : "Country",
+        "Element"           : "select",
+        "Type"              : "",
+        "Options"           : ["Indonesia", "Netherland"],
+        "Placeholder"       : "Pilih Salah Satu",
+        "Value"             : "",
+        "HideField"         : {
+            "HideElement"   : "",
+            "HideCondition" : ""
+        },
+        "Validation"        : {}
+    },
+    {
         "Name"              : "Gender",
         "Element"           : "input",
         "Type"              : "radio",
@@ -18,7 +31,7 @@
         "Type"              : "checkbox",
         "Options"           : ["Ain't", "This", "Cool"],
         "Placeholder"       : "",
-        "Value"             : "",
+        "Value"             : [],
         "HideField"         : {
             "HideElement"   : "",
             "HideCondition" : ""
@@ -31,7 +44,7 @@
         "Type"              : "checkbox",
         "Options"           : ["Netherlands", "Germany", "Belgium"],
         "Placeholder"       : "",
-        "Value"             : "",
+        "Value"             : [],
         "HideField"         : {
             "HideElement"   : "",
             "HideCondition" : ""
@@ -78,7 +91,7 @@
         "Type"              : "text",
         "Options"           : [],
         "Placeholder"       : "Favourite pizza topping",
-        "Value"             : "",
+        "Value"             : "pizza",
         "HideField"         : {
             "HideElement"   : "",
             "HideCondition" : ""
