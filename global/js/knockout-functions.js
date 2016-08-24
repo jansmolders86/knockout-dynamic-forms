@@ -122,6 +122,15 @@ function ViewModel(data) {
             }
         }
     });
+
+    //--Helper
+    self.IsNullOrEmpty = function (param) {
+        if (param) {
+            if (param == '') return true;
+            return false;
+        }
+        return true;
+    }
 }
 
 function doAjaxCall(url, callback) {

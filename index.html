@@ -29,15 +29,21 @@
                 <!--/ko-->
 
                 <!--ko if: Element() === "select" -->
-                <select data-bind="options: Options, attr: {id:Name}, value:Value"></select>
+                <select data-bind="options: Options, attr: {id:Name}, value:Value, optionsCaption : $root.IsNullOrEmpty(Placeholder()) == true? 'Choose One' : Placeholder()"></select>
                 <!--/ko-->
 
-                <!--ko if: Element() === "input" && Type() === "radio" || Type() === "checkbox" -->
+                <!--ko if: Element() === "input" && Type() === "checkbox" -->
                 <!-- ko foreach: Options -->
                     <input type="checkbox" data-bind="checkedValue: $data, checked: $parent.Value" />
                     <span data-bind="text: $data"></span>
                 <!-- /ko -->
-                
+                <!--/ko-->
+
+                <!--ko if: Element() === "input" && Type() === "radio" -->
+                <!-- ko foreach: Options -->
+                    <input type="radio" data-bind="checkedValue: $data, checked: $parent.Value" />
+                    <span data-bind="text: $data"></span>
+                <!-- /ko -->
                 <!--/ko-->
 
                 <!--ko if: Element() === "input" && Type() !== "radio" && Type() !== "checkbox" && Type() !== "submit" -->

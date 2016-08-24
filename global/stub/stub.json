@@ -1,11 +1,24 @@
 { "formElements": [
     {
+        "Name"              : "Country",
+        "Element"           : "select",
+        "Type"              : "",
+        "Options"           : ["Indonesia", "Netherland"],
+        "Placeholder"       : "Pilih Salah Satu",
+        "Value"             : "",
+        "HideField"         : {
+            "HideElement"   : "",
+            "HideCondition" : ""
+        },
+        "Validation"        : {}
+    },
+    {
         "Name"              : "Gender",
         "Element"           : "input",
         "Type"              : "radio",
         "Options"           : ["Male", "Female", "Unkown"],
         "Placeholder"       : "",
-        "Value"             : [],
+        "Value"             : "",
         "HideField"         : {
             "HideElement"   : "",
             "HideCondition" : ""
