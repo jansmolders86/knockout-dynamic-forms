@@ -53,5 +53,3 @@ Two stubs are included for testing purposes.
 Feel free to improve or use. 
 (ps, run on a webserver, locally does not work of course)
 
-## Thanks to
-[Jan Smolders](https://github.com/jansmolders86)
