@@ -1,10 +1,3 @@
-knockout-dynamic-forms
-======================
-License: MIT
-
-## Perfection
-Perfection of https://github.com/jansmolders86/knockout-dynamic-forms
-
 ## Knockout Dynamic Forms with Validation
 
 Validation uses: https://github.com/Knockout-Contrib/Knockout-Validation.
